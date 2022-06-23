@@ -1,6 +1,23 @@
+# def reverse_string(str)
+#   # type your code in here
+#   reversed = ''
+#   length = str.length - 1
+
+#   length.downto(0).each do |i|
+#     reversed << str[i]
+#   end
+#   puts reversed
+# end
 def reverse_string(str)
-  # type your code in here
-end
+    # type your code in here
+    reversed = ''
+    length = str.length - 1
+  
+    str.chars.each do |i|
+      reversed = i + reversed
+    end
+     reversed
+  end
 
 if __FILE__ == $PROGRAM_NAME
   puts "Expecting: 'ih'"
